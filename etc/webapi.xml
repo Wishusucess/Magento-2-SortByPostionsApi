@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Category: Wishusucess Sort By Positions REST Api
+ * Developer: Hemant Singh Magento 2x Developer
+ * Website: http://wwww.wishusucess.com
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../app/code/Magento/Webapi/etc/webapi.xsd">
+    <route url="/V1/getsortorder" method="GET">
+        <service class="Wishusucess\SortByPositionsApi\Api\GetSortOrderInterface" method="getSortOrderData"/>
+        <resources>
+            <resource ref="admin"/>
+        </resources>
+    </route>
+</routes>
